@@ -66,40 +66,21 @@ permalink: posts/210325
 </template>
 ```
 
-### SCSS
+### SCSS (只擷取主要)
 
 ```css
-#app {
-    text-align: center;
-    margin: auto;
-}
 .slides {
     margin: auto;
-
-    .img-boxex {
-        position: relative;
-        width: 600px;
-        height: 400px;
-        overflow: hidden;
-        margin: 20px auto;
-        border: 10px solid white;
-        box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
-
-        .img-box {
-            position: absolute;
-            img {
-            }
-            span {
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 2;
-                background-color: rgba(0, 0, 0, 0.7);
-                padding: 5px 10px;
-                color: #fff;
-            }
-        }
-    }
+}
+.img-boxex {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+.img-box {
+    position: absolute;
 }
 
 .right-in-enter {             
