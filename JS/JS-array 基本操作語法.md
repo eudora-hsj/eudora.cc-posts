@@ -101,7 +101,7 @@ friends.forEach((friend, index) => {
 let numbers = [1, 2, 3]
 ```
 
-### ◎`map()`：將每一次的結果集合為一個新陣列回傳
+## ◎`map()`：將每一次的結果集合為一個新陣列回傳
 
 ```javascript
 let mapNumbers = numbers.map(number =>
@@ -112,17 +112,17 @@ console.log(mapNumbers)  // 2, 4 , 6
 
  
 
-### ◎`reduce()` 操作參數包含前次結果(可用於累加)
+## ◎`reduce()` 操作參數包含前次結果(可用於累加:accumulator (acc))
 
 ```javascript
-let reduceNumbers = numbers.reduce((number, sum) =>
-    number + sum
+let reduceNumbers = numbers.reduce((acc, number) =>
+    number + acc
     ,0
 )
 console.log(reduceNumbers)  // 6  (1+2+3)
 ```
 
-### ◎`filter()`：回傳所有符合條件的元素
+## ◎`filter()`：回傳所有符合條件的元素
 
 ```javascript
 let filterNumbers = nums.filter( num => 
@@ -131,7 +131,7 @@ let filterNumbers = nums.filter( num =>
 console.log(filterNumbers)  // [11, 13] 
 ```
 
-### ◎`find()`：回傳第一個符合條件的元素
+## ◎`find()`：回傳第一個符合條件的元素
 
 ```javascript
 let findNumbers = nums.find( num => 
@@ -146,7 +146,7 @@ console.log(findNumbers)  // 11
 let nums = [1, 3 , 5, 7,  9 , 11 , 13]
 ```
 
-### ◎`some()` ：只要有１個以上符合條件，就為 true
+## ◎`some()` ：只要有１個以上符合條件，就為 true
 
 ```javascript
 let someNumbers = nums.some( num => 
@@ -155,7 +155,7 @@ let someNumbers = nums.some( num =>
 console.log(someNumbers)  // true 
 ```
 
-### ◎`every()` ：每一個都符合時才會回傳 true
+## ◎`every()` ：每一個都符合時才會回傳 true
 
 ```javascript
 let everyNumbers = nums.every( num => 

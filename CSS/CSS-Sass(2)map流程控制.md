@@ -9,7 +9,7 @@ category: 'CSS'
 permalink: posts/31495
 
 ---
-續[上一篇](https://eudora.cc/posts/59814/) Sass 基本的語法應用，這篇來介紹 Sass 的進階語法，讓你會一度有 CSS 是程式語言的錯覺。
+續[上一篇](/posts/59814/) Sass 基本的語法應用，這篇來介紹 Sass 的進階語法，讓你會一度有 CSS 是程式語言的錯覺。
 
 <!--more--> 
 

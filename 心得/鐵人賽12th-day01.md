@@ -20,7 +20,7 @@ category: 'iT 邦幫忙鐵人賽'
 
 | Day |        About | Subject                                               |
 | --- | ------------:|:----------------------------------------------------- |
-| 01  |        Autor | [關於《For 前端小幼苗的圖解筆記》](https://ithelp.ithome.com.tw/articles/10235015)|
+| 01  |        Author | [關於《For 前端小幼苗的圖解筆記》](https://ithelp.ithome.com.tw/articles/10235015)|
 | 02  |       Editor | [CodePen / VS Code 常用快速鍵](https://ithelp.ithome.com.tw/articles/10237385)                          |
 | 03  |       Editor | [VS Code 實用插件 / 主題插件](https://ithelp.ithome.com.tw/articles/10239034)                                  |
 | 04  |     Git | [Git 基礎觀念](https://ithelp.ithome.com.tw/articles/10240279) |
@@ -48,8 +48,8 @@ category: 'iT 邦幫忙鐵人賽'
 | 27  |       Vue.js | [Vue.js 基本常用語法範例](https://ithelp.ithome.com.tw/articles/10252642)|
 | 28  |       Vue.js | [Vue.js 實作 - To Do List 一眼瞬間版（上)](https://ithelp.ithome.com.tw/articles/10252979)      |
 | 29  | Vue.js | [Vue.js 實作 - To Do List 一眼瞬間版（下)](https://ithelp.ithome.com.tw/articles/10253335)|
-| 20  |        Autor | [心得 轉職工程師的內心戲](https://ithelp.ithome.com.tw/articles/10249612)|
-| 30  |        Autor | [《For 前端小幼苗的圖解筆記》完賽!](https://ithelp.ithome.com.tw/articles/10253433)                 |
+| 20  |        Author | [心得 轉職工程師的內心戲](https://ithelp.ithome.com.tw/articles/10249612)|
+| 30  |        Author | [《For 前端小幼苗的圖解筆記》完賽!](https://ithelp.ithome.com.tw/articles/10253433)                 |
 
 ---
 
@@ -69,7 +69,7 @@ category: 'iT 邦幫忙鐵人賽'
 ## 關於 Eudora
 
 ```javascript
-let autor = {
+let author = {
     name: 'Eudora',
     gender: 'female ',
     position: 'Frontend Developer',

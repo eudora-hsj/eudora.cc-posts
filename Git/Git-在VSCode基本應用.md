@@ -18,7 +18,7 @@ date: 2020-09-22 21:15:26
 
 ---
 
-[上一篇](https://eudora.cc/posts/31487/)提到的 Git 傳送階段：
+[上一篇](/posts/31487/)提到的 Git 傳送階段：
 ![](https://i.imgur.com/7rrUAmO.png) 
 
 ---

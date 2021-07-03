@@ -1,6 +1,6 @@
 ---
 title:  '[CSS] Sass 新手入門(3)函數應用'
-date: 2020-09-26 04:08:10
+date: 2020-09-25 03:08:10
 tags: [CSS, Sass]
 category: 'CSS'
 #   - - (所有文章)
@@ -9,7 +9,7 @@ category: 'CSS'
 permalink: posts/31491
 
 ---
-續[上一篇](https://eudora.cc/posts/31495/) Sass 進階應用，這篇列表 Sass 內建函數，及自定義函數的用法。
+續[上一篇](/posts/31495/) Sass 進階應用，這篇列表 Sass 內建函數，及自定義函數的用法。
 
 <!--more--> 
 

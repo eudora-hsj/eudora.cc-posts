@@ -19,7 +19,7 @@ permalink: posts/210303
 ---
 
 ## Demo
-[> CodeSandbox]([https://codesandbox.io/s/componentjiandeziliaochuandilianxi-uu0fb?file=/src/components/b1.vue](https://codesandbox.io/s/componentjiandeziliaochuandilianxi-uu0fb?file=/src/components/b1.vue))
+[> CodeSandbox]([https://codesandbox.io/s/componentjiandeziliaochuandilianxiwuvuex-uu0fb?from-embed])
 
 <iframe src="https://codesandbox.io/embed/componentjiandeziliaochuandilianxiwuvuex-uu0fb?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=preview"
      style="width:100%; height:860px; border:0; border-radius: 4px; overflow:hidden;"
@@ -42,7 +42,7 @@ permalink: posts/210303
 - 本例 Components 組件引用關係：
 
     - a1 引入 b1 & b2
-    ```html
+    ```html{2,3}
     <template>
         <b1/></b1>
         <b2/></c2>
@@ -50,7 +50,7 @@ permalink: posts/210303
     ```
 
     - b1 引入 c1
-    ```html
+    ```html{2}
     <template>
         <c1/></c1>
     </template>
@@ -64,7 +64,7 @@ permalink: posts/210303
 
 - a1 ：引子組件時直接透過 v-bind 傳資料
 
-    ```html
+    ```html{2,8}
     <template>
     	<b1 :textA1="textA1" />
     </template>
@@ -80,17 +80,17 @@ permalink: posts/210303
 
 - b1：定義 props 接收父層資料
 
-    ```html
+    ```html{2,6-10}
     <template>
     	<p>{{ textA1 }}</p>
     </template>
 
     <script>
-    	props: {
+        props: {
             textA1: {
                 type: String
             }
-      }
+        }
     </script>
     ```
 
@@ -103,7 +103,7 @@ permalink: posts/210303
 
 - a1 傳給子
 
-    ```html
+    ```html{2,8}
     <template>
     	<b1 :textA1="textA1" />
     </template>
@@ -119,7 +119,7 @@ permalink: posts/210303
 
 - b1 再傳給子
 
-    ```html
+    ```html{2,6-10}
     <template>
     	<c1 :textA1="textA1" />
     </template>
@@ -129,13 +129,13 @@ permalink: posts/210303
             textA1: {
                 type: String
             }
-      }
+        }
     </script>
     ```
 
 - c1
 
-    ```html
+    ```html{2,6-10}
     <template>
     	<p>{{ textA1 }}</p>
     </template>
@@ -155,23 +155,23 @@ permalink: posts/210303
 
 - a1 傳給子
 
-    ```html
+    ```html{2,8}
     <template>
     	<b1 :textA2="textA2" />
     </template>
 
     <script>
     	data: () => {
-        return {
-          textA2: "A2",
-        };
-      },
+            return {
+                extA2: "A2",
+            };
+        }
     </script>
     ```
 
 - b1 引用子時使用 `$v-bind="$attrs"`
 
-    ```html
+    ```html{2}
     <template>
     	<c1 v-bind="$attrs" />
     </template>
@@ -179,7 +179,7 @@ permalink: posts/210303
 
 - c1 透過 `$attrs.XXX` 取資料
 
-    ```html
+    ```html{2}
     <template>
     	<p>{{ $attrs.textA2 }}</p>
     </template>
@@ -193,7 +193,7 @@ permalink: posts/210303
 
 - a1
 
-    ```html
+    ```html{2-3,9,13-15}
     <template>
     	<b1 @emit-data="getChildData"/>
     	<p>{{ dataFromChild }}</p>
@@ -215,13 +215,13 @@ permalink: posts/210303
 
 - b1
 
-    ```html
+    ```html{2,8,12-14}
     <template>
     	<button @click="dataToParent">傳資料給父層</button>
     </template>
 
     <script>
-      data: () => {
+        data: () => {
             return {
                 textB1: "B1",
             };
@@ -240,7 +240,7 @@ permalink: posts/210303
 
 - a1
 
-    ```html
+    ```html{2,3,9,13-15}
     <template>
     	<b1 @getGrandSonData="getGrandSonData"/>
     	<p>{{ dataFromGrandSon }}</p>
@@ -262,7 +262,7 @@ permalink: posts/210303
 
 - b1
 
-    ```html
+    ```html{2}
     <template>
     	<c1 v-on="$listeners" />
     </template>
@@ -270,7 +270,7 @@ permalink: posts/210303
 
 - c1
 
-    ```html
+    ```html{2,8,12-15}
     <template>
         <button @click="sendGrandSonData">傳資料給祖父層</button>
     </template>
@@ -298,7 +298,7 @@ permalink: posts/210303
 
 - 父層a1含b1、b2。b1要傳給b2
 
-    ```html
+    ```html{2,3}
     <template>
     	<b1/></b1>
     	<b2/></c2>
@@ -307,7 +307,7 @@ permalink: posts/210303
 
 1. eventBus：建立共用同一個事件機制-新增一個獨立的js檔 (例:eventBus.js)
 
-    ```html
+    ```js
     import Vue from 'vue';
 
     export default new Vue();
@@ -315,7 +315,7 @@ permalink: posts/210303
 
 2. 子組件 b1、b2 都引入 eventBus.js 檔
 
-    ```html
+    ```html{2}
     <script>
     	import eventBus from "./../js/eventBus.js";
     </script>
@@ -323,7 +323,7 @@ permalink: posts/210303
 
 3. 子組件 b1 (要傳遞資料的）
 
-    ```html
+    ```html{2,8,12-14}
     <template>
     	<button @click="dataToBrother">傳資料給兄弟</button>
     </template>
@@ -344,7 +344,7 @@ permalink: posts/210303
 
 4. 子組件 b2（要接收資料的）
 
-    ```html
+    ```html{2,8,12,15-19}
     <template>
     	<p>{{ dataFromBrother}}</p>
     </template>

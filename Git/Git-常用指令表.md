@@ -17,7 +17,7 @@ date: 2020-09-21 21:14:46
 - `$ ls -al ~/.ssh `  
     查詢是否有 SSH Key了(出現檔案id_rsa.pub 或 id_dsa.pub 就成功囉)  
 - `$ pbcopy < ~/.ssh/id_rsa.pub`  / `$ clip < ~/.ssh/id_rsa.pub`  
-     複製公鑰 ( Mac / windows )
+     複製公鑰 ( Mac / Windows git bash )
  
  
  

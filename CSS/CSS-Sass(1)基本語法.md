@@ -11,7 +11,7 @@ category: 'CSS'
 # banner_mask_alpha: 0.5
 # comments: true
 permalink: posts/59814
-date: 2020-09-26 06:08:10
+date: 2020-09-27 06:08:10
 ---
 
 簡介 CSS 預處理器 Sass 及基本語法。
@@ -24,7 +24,7 @@ date: 2020-09-26 06:08:10
 
 本文適用於...
 - 已會使用 CSS 定義樣式（選用適當的選擇器定義屬性與屬性值）
-- 已配置 Ssss 編譯 CSS 的開發環境（若還沒，[使用線上編輯器 CodePen](/posts/59814/#%E7%B7%9A%E4%B8%8A%E8%A9%A6%E8%A9%A6)來體驗一波）
+- 已配置 Sass 編譯 CSS 的開發環境（若還沒，[使用線上編輯器 CodePen](/posts/59814/#%E7%B7%9A%E4%B8%8A%E8%A9%A6%E8%A9%A6)來體驗一波）
 - 想快速了解重點語法應用的 Sass 新手
 
 </div>

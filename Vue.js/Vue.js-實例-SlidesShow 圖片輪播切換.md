@@ -2,7 +2,7 @@
 title: '[Vue.js] 實例-SlidesShow 圖片輪播切換'
 tags: [JavaScript, Vue.js]
 category: Vue.js
-date: 2021-03-25 11:46:42
+date: 2021-03-23 08:46:42
 permalink: posts/210325
 
 ---
@@ -26,7 +26,7 @@ permalink: posts/210325
 
 ---
 
-##　重點：
+## 重點：
 
    1. 上一頁
    2. 下一頁
@@ -69,15 +69,12 @@ permalink: posts/210325
 ### SCSS (只擷取主要)
 
 ```css
-.slides {
-    margin: auto;
-}
+
 .img-boxex {
     position: relative;
+    overflow: hidden;
     width: 600px;
     height: 400px;
-    overflow: hidden;
-    margin: 20px auto;
 }
 .img-box {
     position: absolute;

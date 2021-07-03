@@ -57,9 +57,9 @@ BOM （Browser Object Model） - window 常見應用。
     window.location = location.href
     ```
 
-- 取當前網址-例：https://eudora.cc/posts/63534/#more
+- 取當前網址-例：/posts/63534/#more
     ```javascript
-    window.location.href     // "https://eudora.cc/posts/63534/#more"
+    window.location.href     // "/posts/63534/#more"
     ```
     ```javascript
     window.location.origin   // "https://eudora.cc"
